@@ -49,7 +49,8 @@ class Model(QtCore.QAbstractTableModel):
         return 2
 
     def flags(self, index):
-        return QtCore.Qt.ItemIsEditable | QtCore.Qt.ItemIsEnabled | QtCore.Qt.ItemIsSelectable
+        return (QtCore.Qt.ItemIsEditable | QtCore.Qt.ItemIsEnabled |
+                QtCore.Qt.ItemIsSelectable)
 
     def data(self, index, role):
         if role == QtCore.Qt.DisplayRole:
@@ -66,7 +67,10 @@ class Main(QtGui.QMainWindow):
         self.model = Model()
         self.table = QtGui.QTableView()
         self.table.setModel(self.model)
-        self.table.setItemDelegateForColumn(1, Delegate(self, ["apple", "orange", "banana"]))
+        self.table.setItemDelegateForColumn(1, Delegate(self,
+                                                        ["apple",
+                                                         "orange",
+                                                         "banana"]))
         self.setCentralWidget(self.table)
         self.setWindowTitle('Delegate Test')
         self.show()

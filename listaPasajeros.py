@@ -1,8 +1,8 @@
 import agrmodPasajero
 import infoPasajero
 from PyQt5 import QtWidgets
-from views import ui_listaPasajeros
-from controllers import controlador
+from vistas import ui_listaPasajeros
+from controladores import controlador
 
 
 class ListaPasajeros(QtWidgets.QDialog,

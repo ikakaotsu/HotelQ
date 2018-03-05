@@ -1,8 +1,7 @@
 from PyQt5 import QtWidgets
-# from PyQT5.QtCore import pyqtSignature
 from PyQt5.QtCore import QDate
-from views import ui_agrmodCtaCte
-from controllers import controlador
+from vistas import ui_agrmodCtaCte
+from controladores import controlador
 
 
 class AgrModCtaCte(QtWidgets.QDialog,

@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets
-from views import ui_listaPrecios
+from vistas import ui_listaPrecios
 
 
 class ListaPrecios(QtWidgets.QMainWindow,
@@ -35,7 +35,7 @@ class ListaPrecios(QtWidgets.QMainWindow,
         stock = QtWidgets.QTableWidgetItem(str(self.sbstock.value()))
         precio = QtWidgets.QTableWidgetItem(self.txtprecio.text())
         descripcion = QtWidgets.QTableWidgetItem(self.txtdescripcion.text())
-        print (stock)
+        print(stock)
         posicionfila = self.tableWidget.rowCount()
         self.tableWidget.insertRow(posicionfila)
         self.tableWidget.setItem(posicionfila, 1, rubro)
@@ -44,4 +44,4 @@ class ListaPrecios(QtWidgets.QMainWindow,
         self.tableWidget.setItem(posicionfila, 4, precio)
         self.tableWidget.setItem(posicionfila, 5, descripcion)
         self.fmAgregar.hide()
-        print ("Boton Presionado")
+        print("Boton Presionado")

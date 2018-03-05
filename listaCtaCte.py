@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets, QtGui, QtCore
-from views import ui_listaCtaCte
-from controllers import controlador
+from vistas import ui_listaCtaCte
+from controladores import controlador
 
 
 class ListaCtaCte(QtWidgets.QDialog,
@@ -71,7 +71,7 @@ class ListaCtaCte(QtWidgets.QDialog,
             proxy.setFilterKeyColumn(1)
             proxy.setFilterFixedString(apeynom)
             matchingIndex = proxy.mapToSource(proxy.index(0, 0))
-            print (matchingIndex)
+            print(matchingIndex)
             if(matchingIndex.isValid()):
                 self.tviewCtaCte.scrollTo(matchingIndex,
                                           QtWidgets.QAbstractItemView.

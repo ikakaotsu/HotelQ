@@ -1,7 +1,7 @@
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
-from views import ui_infoPasajero
-from controllers import controlador
+from vistas import ui_infoPasajero
+from controladres import controlador
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QGraphicsScene
 

@@ -1,7 +1,6 @@
 from PyQt5 import QtWidgets
-# from PyQt5.QtCore import pyqtSignature
-from views import ui_agrmodPasajero
-from controllers import controlador
+from vistas import ui_agrmodPasajero
+from controladores import controlador
 
 
 class AgrModPasajero(QtWidgets.QDialog,
@@ -46,7 +45,7 @@ class AgrModPasajero(QtWidgets.QDialog,
         self.cboProvincia.clear()
         self.cboProvincia.addItem("Provincia")
         indice = self.cboNacional.currentIndex()
-        print (indice)
+        print(indice)
         lista = controlador.obtenerProvincias(self.sesion, indice)
         for i in lista:
             self.cboProvincia.addItems(i)
@@ -83,7 +82,7 @@ class AgrModPasajero(QtWidgets.QDialog,
             controlador.agrmodPasajero(self.sesion, data, self.codigo)
 
         except ValueError as e:
-            print ("Se produjo un Error", e)
+            print("Se produjo un Error", e)
 
         QtWidgets.QDialog.accept(self)
 

@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
-from views import ui_ingresarPasajero
-from controllers import controlador
+from vistas import ui_ingresarPasajero
+from controladores import controlador
 
 
 class IngresarPasajero(QtWidgets.QDialog,

@@ -4,7 +4,7 @@ Created on 25/07/2013
 @author: otiuqx
 '''
 
-import models.modelo as db
+import modelos.modelo as db
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import func
 

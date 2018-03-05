@@ -6,8 +6,8 @@ import listaCtaCte
 import listaPrecios
 import ingresarPasajero
 from PyQt5 import Qt, QtWidgets
-from views.ui_principal import Ui_Hotel
-from controllers import controlador
+from vistas.ui_principal import Ui_Hotel
+from controladores import controlador
 
 
 class ppalHotel(QtWidgets.QMainWindow):
